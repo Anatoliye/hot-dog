@@ -1,9 +1,15 @@
-import { Button } from "@/components/ui/button";
+import { Container } from "@/components/shared/Container";
+import { Title } from "@/components/shared/Title";
+import React from "react";
 
-export default function Home() {
+function page() {
   return (
-    <div>
-      <Button variant="default">Click me</Button>
-    </div>
+    <>
+      <Container className="mt-7">
+        <Title text="All Hot Dog" size="lg" className="font-extrabold" />
+      </Container>
+    </>
   );
 }
+
+export default page;

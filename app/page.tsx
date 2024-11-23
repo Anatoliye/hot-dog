@@ -3,6 +3,7 @@ import { Container } from "@/components/shared/Container";
 import { Title } from "@/components/shared/Title";
 import { TopBar } from "@/components/shared/TopBar";
 import { Filters } from "@/components/shared/Filters";
+import { ProductCard } from "@/components/shared/ProductCard";
 
 function page() {
   return (
@@ -18,7 +19,7 @@ function page() {
           </div>
 
           <div className="flex-1">
-            <div className="flex flex-col gap-16">List of products</div>
+            <div className="flex flex-col gap-16">list of product</div>
           </div>
         </div>
       </Container>

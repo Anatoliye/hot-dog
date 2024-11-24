@@ -3,6 +3,7 @@ import React from "react";
 import { Plus } from "lucide-react";
 import { Title } from "./Title";
 import { Button } from "../ui/button";
+import { cn } from "@/lib/utils";
 interface Props {
   id: number;
   name: string;
@@ -19,9 +20,11 @@ export const ProductCard: React.FC<Props> = ({
   className,
 }) => {
   return (
-    <div className={className}>
+    <div
+      className={cn("border border-black/10 px-3 pb-3 rounded-2xl", className)}
+    >
       <Link href="/product/1">
-        <div className="flex justify-center p-6 bg-secondary rounded-lg h-[260px]">
+        <div className="flex justify-center items-center p-6 bg-popover rounded-lg h-[260px]">
           <img className="w-[215px] h-[215px]" src={imageUrl} alt={name} />
         </div>
 
